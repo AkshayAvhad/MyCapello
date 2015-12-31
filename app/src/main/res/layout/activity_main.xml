@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_textview"
+        android:textColor="@color/red"
+        android:gravity="center_horizontal"
+        android:paddingTop="25dp"
+        android:paddingBottom="10dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin_btn"
+        android:background="@color/red"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/signin_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signup_textview"
+        android:textColor="@color/red"
+        android:gravity="center_horizontal"
+        android:paddingTop="25dp"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_btn"
+        android:text="@string/sign_up"
+        android:background="@color/red"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:text="@string/Guest_textview"
+        android:textColor="@color/red"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/guest_btn"
+        android:background="@color/red"
+        android:text="@string/enter_guest"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
