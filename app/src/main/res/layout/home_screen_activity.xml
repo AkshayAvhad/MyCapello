@@ -24,7 +24,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:id="@+id/signin_btn"
-        android:background="@color/red"
+        android:background="@drawable/round_corner_red_btn"
         android:layout_gravity="center_horizontal"
         android:text="@string/signin_text" />
 
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/signup_btn"
         android:text="@string/sign_up"
-        android:background="@color/red"
+        android:background="@drawable/round_corner_red_btn"
         android:layout_gravity="center_horizontal"/>
 
     <TextView
@@ -60,7 +60,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:id="@+id/guest_btn"
-        android:background="@color/red"
+        android:background="@drawable/round_corner_red_btn"
         android:text="@string/enter_guest"
         android:layout_gravity="center_horizontal"/>
 
