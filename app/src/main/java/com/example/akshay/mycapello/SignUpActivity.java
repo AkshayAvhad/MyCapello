@@ -1,16 +1,19 @@
 package com.example.akshay.mycapello;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 
 /**
- * Created by Akshay on 29-12-2015.
+ * Created by Akshay on 05-01-2016.
  */
-public class SignUpActivity extends Activity {
+public class SignUpActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.signup_activity);
+        setContentView(R.layout.activity_signup);
+
+
+
     }
 }

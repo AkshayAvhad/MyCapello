@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight=".60">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/abc_text_size_headline_material"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".40"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_with"
+            android:id="@+id/loginwith"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/loginwith"
+            android:layout_toRightOf="@id/loginwith"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/fb_login_imgvw"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/fb_login_imgvw"
+            android:layout_toRightOf="@id/fb_login_imgvw"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginwith"
+            android:hint="@string/email_addr"
+            android:inputType="textEmailAddress"
+            android:id="@+id/email_address"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/round_edittext"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_address"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/round_edittext"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:id="@+id/forgt_pass"
+            android:layout_below="@id/password"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="7dp"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forgt_pass"
+            android:id="@+id/login_btn"
+            android:layout_marginBottom="7dp"
+            android:text="@string/login"
+            android:background="@drawable/round_edge_btn"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_btn"
+            android:layout_marginBottom="7dp"
+            android:text="@string/signup"
+            android:background="@drawable/round_edge_btn"
+            android:id="@+id/signup_btn"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
