@@ -17,15 +17,19 @@
     <com.github.siyamed.shapeimageview.CircularImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/image_view"
         android:src="@drawable/picture_icon"
         android:layout_gravity="center_horizontal"
         app:siBorderWidth="6dp"
+        android:layout_marginBottom="5dp"
         app:siBorderColor="#00BCD4" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/displayname"
             android:gravity="center_horizontal"
+            android:inputType="textPersonName"
             android:background="@drawable/round_edittext"
             android:hint="@string/display_name"
             android:layout_gravity="center_vertical"
@@ -34,7 +38,9 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/emailaddress_signup"
             android:gravity="center_horizontal"
+            android:inputType="textEmailAddress"
             android:background="@drawable/round_edittext"
             android:hint="@string/email_addr"
             android:layout_gravity="center_vertical"
@@ -43,6 +49,8 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/password_signup"
+            android:inputType="textPassword"
             android:gravity="center_horizontal"
             android:background="@drawable/round_edittext"
             android:hint="@string/password"

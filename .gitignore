@@ -1,7 +1,33 @@
+# Gradle files
+.idea
 .gradle
-/local.properties
 /.idea/workspace.xml
 /.idea/libraries
-.DS_Store
-/build
+build/
 /captures
+
+# Local configuration files
+/local.properties
+
+#Generated files
+bin/
+gen/
+
+# Java class files
+*.class
+
+#Files for dalvik VM
+*.dex
+
+# Built application files
+*.apk
+*.ap_
+
+# OSX files
+.DS_Store
+
+# Log Files
+*.log
+
+# Windows Thumbnail db
+Thumbs.db
