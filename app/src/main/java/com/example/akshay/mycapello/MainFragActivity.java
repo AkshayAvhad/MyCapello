@@ -2,9 +2,9 @@ package com.example.akshay.mycapello;
 
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
-import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.os.Bundle;
 
 
 public class MainFragActivity extends FragmentActivity implements ActionBar.TabListener {
@@ -12,7 +12,7 @@ public class MainFragActivity extends FragmentActivity implements ActionBar.TabL
     private ViewPager viewPager;
     private ActionBar actionBar;
     private TabsFragmentPagerAdapter tabsAdapter;
-    private String[] days = new String[]{"Monday","Tuesday","Wednesday"};
+    private String[] days = new String[]{"Monday","Tuesday","Wednesday","Thursday"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +26,10 @@ public class MainFragActivity extends FragmentActivity implements ActionBar.TabL
         actionBar = getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
-        for (int i=0; i<3 ; i++){
-            actionBar.addTab(actionBar.newTab().setText(days[i]).setTabListener(this));
+        final int[] ICONS = new int[]{R.drawable.facebook, R.drawable.share, R.drawable.rate, R.drawable.contact_us};
+
+        for (int i=0; i<4 ; i++){
+            actionBar.addTab(actionBar.newTab().setText(days[i]).setIcon(this.getResources().getDrawable(ICONS[i])).setTabListener(this));
         }
 
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {

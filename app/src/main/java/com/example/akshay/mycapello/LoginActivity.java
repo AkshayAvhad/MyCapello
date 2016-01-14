@@ -21,7 +21,8 @@ public class LoginActivity extends ActionBarActivity {
         login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(LoginActivity.this,CardListActivity.class);
+                startActivity(intent);
             }
         });
 
